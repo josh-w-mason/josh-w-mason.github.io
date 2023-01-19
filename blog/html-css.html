@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Technical Blog - CSS Concepts</title>
+  </head>
+  <body>
+ <p class="techparagraph">
+Today we are going to tackle the age old Dev Academy question that may have stumped many a student for at least a few hours:<br><br>
+
+<em>&emsp; - What does it mean to display inline vs inline blocks?</em> <br><br>
+
+Every html file outlines the content for your web page and is made up of a series of different 
+components, which are known as elements. There are many different kinds of elements, and they 
+are denoted using tags. For example, if you wanted to write a regular ol’ paragraph such as 
+“The quick brown fox jumps…etc”, you would use the ‘p’ (&lt;p&gt;) tag. Written as code this looks like:<br><br></p>
+
+<img src="../Media/ptageg.jpg" alt="Code Example 1">
+
+<p class="techparagraph">Looks pretty straight forward, right? What you may not have realised is that this paragraph has 
+  some built in properties that dictate how it will be laid out on the page. It may look like there
+   is empty space beside it on our web page, but this is more akin to air rather than a perfect 
+   vacuum: it’s still there, you just can’t see it. To demonstrate, watch how even if I place two 
+   paragraphs side by side in Visual Studio Code, this is not how they are displayed on our page:<br><br></p>
+
+<img src="../Media/ptag2.jpg" alt="Code Example 2">
+
+<p class="techparagraph">You know how on those detective TV shows they go into a seemingly innocuous hotel room, but then turn
+   on a UV light and all of a sudden the room lights up with previously washed out blood stains, making it
+   resemble a Jackson Pollock painting? I will now do the web dev equivalent of that, and tell
+    the html to display the paragraph outline, by specifying this property in the linked CSS code:<br><br></p>
+
+<img src="../Media/ptag3.jpg" alt="Code Example 3">
+
+<p class="techparagraph">P elements are a type of “block” element, which means they always take up the whole line even if your
+   text didn’t take up the whole line. As an internal logic this makes sense, because in real life we 
+   know that new paragraphs always start on a new line. But sometimes we don’t want to start on an 
+   entirely new line - for example, if we want to add an element such as a “span” that affects only 
+   a portion of the words in the middle of a sentence. We wouldn’t want this to move the rest of the
+    sentence to the next line. Fortunately, these elements have a different built-in display property known 
+    as “inline”, whereby they will play nice and only take up as much space as needed and will automatically 
+    fit beside one another. If I want my paragraph to behave in such a way, 
+    I can manually define the display property as inline like so:<br><br></p>
+
+<img src="../Media/ptag4.jpg" alt="Code Example 4">
+
+
+<p class="techparagraph">One thing to bare in mind however, is that when you specify inline as the display, if you try to 
+change the width and height, these parameters will have no effect. Presumably because
+ under the hood  these properties are in flux and adjust automatically depending on the context of all the elements that they have to fit 
+ together with. One way to get around this though is by using the display property “inline-block”, which 
+ is sort of the best of both worlds, in that it shares space on a single line AND 
+ you can also set the height and width properties.<br><br></p>
+
+<img src="../Media/ptag5.jpg" alt="Code Example 5">
+
+<p class="techparagraph">As an example see the above. It is still fitting the two separate p elements on one line, and 
+I have told the CSS styling code on the right to make the last half of the sentence a bigger font-size. <br><br>
+<a href="../index.html">Back</a>
+ </p>
+
+  </body>
+</html>
