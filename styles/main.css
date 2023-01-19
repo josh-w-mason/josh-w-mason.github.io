@@ -1,0 +1,80 @@
+.badass-heading {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  border: 6px outset rgb(180, 5, 28);
+  padding: 5px;
+}
+
+.sub-heading {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  border: 6px outset rgb(180, 5, 28);
+  padding: 5px;
+}
+
+#fortypercent {
+  color: blue;
+  }
+
+ #explosion {
+max-width:100%;
+max-height:100%;
+} 
+
+#button-survey {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  margin: auto;
+  width: 30%;
+  border: 6px outset green;
+  padding: 5px; 
+}
+
+.blog-links {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  border: 6px outset green;
+  padding: 5px; 
+}
+
+@media (max-width: 320px) {
+.badass-heading {
+  color: yellow;
+  font-size: 17px
+}
+.sub-heading {
+  font-size: 10px;
+  margin: auto;
+  width: 30%;
+  border: 6px outset rgb(180, 5, 28);
+  padding: 5px; 
+}
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+.sub-heading {
+  color: aquamarine;
+}
+}
+
+@media (min-width: 1200px) {
+  .sub-heading, #button-survey {
+  color: purple;
+  text-align: center;
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding: 5px
+}
+}
+
+.techparagraph {
+  font-size: 27px;
+  font-family: Cambria
+}
