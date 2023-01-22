@@ -78,3 +78,13 @@ max-height:100%;
   font-size: 27px;
   font-family: Cambria
 }
+
+.blog-question {
+  font-size: 27px;
+  font-weight: bold 
+}
+
+.blog-para {
+  font-family: Cambria;
+  font-size: 23px
+}
