@@ -86,5 +86,13 @@ max-height:100%;
 
 .blog-para {
   font-family: Cambria;
-  font-size: 23px
+  font-size: 23px;
+  width: 85%
+}
+
+.blog-head {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: blueviolet;
 }
